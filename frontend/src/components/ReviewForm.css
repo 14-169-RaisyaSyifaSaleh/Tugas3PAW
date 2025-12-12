@@ -1,0 +1,91 @@
+.review-form-container {
+  background: rgb(125, 26, 26);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.review-form-container h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review-textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+.review-textarea:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.review-textarea:disabled {
+  background: #000000;
+  cursor: not-allowed;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.char-count {
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #c53c5a 0%, #c53c5a 100%);
+  color: rgb(171, 36, 36);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(9, 31, 130, 0.4);
+}
+
+.submit-button:disabled {
+  background: #ffffff;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error {
+  background: #e1697b;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.success {
+  background: #7a1324;
+  color: #000000;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}

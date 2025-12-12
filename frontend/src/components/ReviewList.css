@@ -1,0 +1,134 @@
+.review-list-container {
+  margin-top: 40px;
+}
+
+.review-list-container h2 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.review-list {
+  display: grid;
+  gap: 20px;
+}
+
+.review-card {
+  background: rgb(125, 26, 26);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sentiment-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.review-date {
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-text {
+  color: #ffffff;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-style: italic;
+  border-left: 4px solid #ffffff;
+  padding-left: 15px;
+}
+
+.sentiment-score {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sentiment-score strong {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.score-bar {
+  height: 8px;
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+  border-radius: 4px;
+}
+
+.key-points {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.key-points strong {
+  color: #000000;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.key-points-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.key-points-content p {
+  color: #040404;
+  line-height: 1.5;
+  padding-left: 10px;
+}
+
+.empty-state {
+  background: white;
+  border-radius: 12px;
+  padding: 60px 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: #666;
+  font-size: 1.1rem;
+}
